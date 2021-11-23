@@ -16,15 +16,14 @@
   export default {
     name: 'App',
     data: () => ({
-      title: "SAVAGE FENTY",
+      title: "FATIMA",
       links: [
-        '#SAVAGEX',
-        '#SAVAGEXSURVIVORS',
-        '#UXTRA',
-        'NEW DROPS',
-        'SAVAGE X FIT GUIDE',
-        'YOUTUBE'
-      ]
+        'YOUTUBE',
+        'SPOTIFY',
+        'DISCORD',
+        'TIKTOK',
+      ],
+      description: "This is the best description in the freaking world its so great"
     }),
   }
 </script>
