@@ -1,4 +1,9 @@
 <template>
+  <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
+    crossorigin="anonymous"
+  >
   <div container>
     <div title v-text="title" />
     <div data-link-container>
@@ -6,8 +11,10 @@
         data-link
         v-for="(link, index) in links"
         v-bind:key="index"
-        v-text="link"
-      />
+      >
+        <div v-text="link" />
+        <i class="fas fa-location-arrow"></i>
+      </div>
     </div>
     <div description v-text="description" />
   </div>
@@ -60,6 +67,8 @@
   [data-link] {
     padding: 15px;
     background: black;
+    display: flex;
+    justify-content: space-between;
   }
   [description] {
     margin-top: 10px;
